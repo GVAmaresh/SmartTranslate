@@ -1,0 +1,9 @@
+pytesseract
+streamlit
+pdf2image
+sklearn
+transformers
+happytransformer 
+langdetect 
+sentence_transformers
+googletrans==4.0.0-rc1 
