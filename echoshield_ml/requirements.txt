@@ -1,0 +1,15 @@
+torch
+torchaudio
+uvicorn
+fastapi
+scipy
+websockets 
+wsproto
+soundfile
+SpeechRecognition 
+pydub
+transformers
+ffmpeg
+librosa
+soundfile
+python-multipart
