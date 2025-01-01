@@ -5,8 +5,14 @@ from pdf2image import convert_from_path
 from grammer import perfect_grammer  
 from summerise import summarize  
 from translator import convert  
+import torch
+import os
 
 pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(f"Using device: {device}")
 
 def extract_text(file):
     if file is None:

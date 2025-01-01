@@ -1,8 +1,11 @@
 pytesseract
-streamlit
+streamlit 
 pdf2image
 scikit-learn
 transformers
+torch
+torchaudio
+torchvision
 happytransformer 
 langdetect 
 sentence_transformers
