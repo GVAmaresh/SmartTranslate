@@ -6,4 +6,4 @@ WORKDIR /
 
 RUN pip install --upgrade -r /requirements.txt
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7862"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7842"]
