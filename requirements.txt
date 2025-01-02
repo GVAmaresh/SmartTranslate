@@ -10,5 +10,5 @@ happytransformer
 langdetect 
 sentence_transformers
 easyocr
-
+Pillow
 googletrans==4.0.0-rc1 

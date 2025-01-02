@@ -120,22 +120,6 @@ def correct_grammer(txt):
     best_result = min(scored_results, key=lambda x: x[2])  
     return best_result[1]
 
-# test_sentences = [
-#     "I has a apple on the table.",
-#     "She don't likes to play soccer.",
-#     "They was going to the park yesterday.",
-#     "He have two car and one bike.",
-#     "The child throwed the ball to his friend.",
-#     "Where is you going right now?",
-#     "This is the book what I bought yesterday.",
-#     "I doesn't know the answer to your question.",
-#     "We was happy to see the movie together.",
-#     "You should studies hard for the exam."
-# ]
-
-# for sentence in test_sentences:
-#     print(f"Input: {sentence}")
-#     print(f"Corrected: {correct_grammer(sentence)}\n")
 
 def perfect_grammer(txt):
     return correct_grammer(txt)
@@ -153,7 +137,8 @@ from translator import convert
 import torch
 import os
 
-pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
+# pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = r"/usr/bin/tesseract"
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
