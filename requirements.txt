@@ -9,4 +9,6 @@ torchvision
 happytransformer 
 langdetect 
 sentence_transformers
+easyocr
+
 googletrans==4.0.0-rc1 
